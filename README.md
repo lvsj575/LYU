@@ -35,4 +35,5 @@ https://raw.githubusercontent.com/lvsj575/LYU/refs/heads/main/VERSION
 ## 版本管理约定
 
 - 版本号采用语义化版本 `MAJOR.MINOR.PATCH`
-- 每次发布更新 `VERSION` 文件，并在 `CHANGELOG.md` 记录变更
+- **每次更新源码（发布新版本）时必须同步更新本仓库版本号**：同步修改 `VERSION`、`README` 中的当前版本、`CHANGELOG`（新增对应条目），并确保编译宏 `WCB_VERSION` 与该值一致
+- `VERSION` 文件只写版本号本身（如 `1.5.8`），不要带 `v` 前缀或额外文字
